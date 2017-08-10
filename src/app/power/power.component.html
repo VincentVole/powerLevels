@@ -1,0 +1,15 @@
+<div>
+	<form action="">
+		<label for="level">Initial Power Level</label>
+		<input type="number" name="level" id="level" min="1" max="100"
+		[(ngModel)]='tempLevel'
+		>
+		<button (click)="calculate()">Calculate Powers</button>
+	</form>
+</div>
+<app-human [humanLevel]="lvl"></app-human>
+<app-saiyan [saiyanLevel]="lvl*10"></app-saiyan>
+<app-super-saiyan [superSaiyanLevel]="lvl*90"></app-super-saiyan>
+<app-super-saiyan2 [superSaiyan2Level]="lvl*150"></app-super-saiyan2>
+<app-super-saiyan3 [superSaiyan3Level]="lvl*250"></app-super-saiyan3>
+<app-super-saiyan4 [superSaiyan4Level]="lvl*500"></app-super-saiyan4>

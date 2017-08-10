@@ -1,0 +1,7 @@
+<p>
+  Super Saiyan2 Power Level: {{ superSaiyan2Level }}
+</p>
+
+<p *ngIf="superSaiyan2Level <= 20000 && superSaiyan2Level > 9000">"Over 9000!"</p>
+<p *ngIf="superSaiyan2Level < 50000 && superSaiyan2Level > 20000">"Superlative!"</p>
+<p *ngIf="superSaiyan2Level == 50000">"The One"</p>
